@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px auto 5px auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira';
+    gap: 30px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 25px 3px #b8b8b8;
+}
+
+.card1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: daniel;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 6.3vw bottom 25vh;
+}
+
+.card2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+}
+
+.card3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+}
+
+.card4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: patrick;
+}
+
+.card5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: kira;
+    max-width: auto;
+}
+
+.card-header {
+    display: flex;
+}
+
+.card-image img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card-person {
+    margin-left: 15px;
+}
+
+.name {
+    font-size: 13px;
+}
+
+.status {
+    font-size: 11px;
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.testimonials-overview {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.testimonials{
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+/* Text color*/
+.white-text-100 {
+    color: hsl(0, 0%, 100%);
+}
+
+.white-text-50 {
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+}
+
+.lightgrey-text-100 {
+    color: hsl(0, 0%, 81%);
+}
+
+.lightgrey-text-50 {
+    color: hsl(0, 0%, 81%);
+    opacity: 0.5;
+}
+
+.darkgreyblue-text-100 {
+    color: hsl(217, 19%, 35%)
+}
+
+.darkgreyblue-text-50 {
+    color: hsl(217, 19%, 35%);
+    opacity: 0.5;
+}
+
+.darkblackblue-text-100 {
+    color: hsl(219, 29%, 14%);
+}
+
+.darkblackblue-text-50 {
+    color: hsl(219, 29%, 14%);
+    opacity: 0.5;
+}
